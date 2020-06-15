@@ -76,11 +76,11 @@ WSGI_APPLICATION = 'airlines.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'db',
-        'USER': 'localhost',
+        'USER': 'postgres',
         'PASSWORD': 'manish@123',
-        'HOST': '127.0.0.1',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
