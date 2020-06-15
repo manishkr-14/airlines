@@ -1,0 +1,10 @@
+h1{
+  color:blue;
+  text-align: center;
+}
+body{
+  background-color: olive;
+}
+li,ul,a{
+  color:red;
+}
