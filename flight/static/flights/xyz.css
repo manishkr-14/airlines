@@ -1,10 +1,13 @@
 h1{
-  color:blue;
+  color:green;
   text-align: center;
 }
 body{
-  background-color: olive;
+  background-color: black;
 }
-li,ul,a{
+li,ul{
   color:red;
+}
+a{
+  color:blue;
 }
