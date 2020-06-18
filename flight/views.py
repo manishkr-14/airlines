@@ -6,7 +6,7 @@ from django.urls import reverse
 from .models import Flight,Passengers
 def index(request):
     context={"flights":Flight.objects.all()}
-    return render(request,"flights/index.html",context)
+    return render(request,"flights\index.html",context)
 
 
 def flight(request,flight_id):
@@ -19,7 +19,7 @@ def flight(request,flight_id):
     "passsengers":flight.passengers.all(),
     "non_passengers":Passengers.objects.exclude(flights=flight).all()
     }
-    return render(request,"flights/flight.html",context)
+    return render(request,"flights\flight.html",context)
 
 
 def book(request,flight_id):
